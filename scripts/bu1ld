@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/work/device/xiaomi/fleur/prebuilts
-aria2c https://github.com/RT1648/Extras/releases/download/13.0.8.0.SKEMIXM/vendor.img
+aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0.SEKMIXM/vendor.img
 ls
 cd ~/work
 rm -rf /system/sepolicy/vendor/hal_light_default.te
