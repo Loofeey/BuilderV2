@@ -5,6 +5,7 @@ ls
 cd ~/work
 rm -rf system/bpf
 git clone https://github.com/PixelExperience/system_bpf.git system/bpf
+git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
