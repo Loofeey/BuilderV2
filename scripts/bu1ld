@@ -3,8 +3,10 @@ cd ~/work/device/xiaomi/fleur/prebuilts
 aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0.SEKMIXM/vendor.img
 ls
 cd ~/work
-rm -rf platform/system/sepolicy/vendor/hal_light_default.te
-rm -rf platform/system/sepolicy/vendor/rild.te
+rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
+rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
+rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
+rm -rf ~/work/system/sepolicy/vendor/rild.te
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
