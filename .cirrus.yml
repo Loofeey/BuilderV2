@@ -8,7 +8,7 @@ env:
     LUNCH_COMBO: aosp_$DEVICE-userdebug
     OUTPUT: P*.zip
     CLO: 1:ci
-    CLO_1: ENCRYPTED[3d6ae16d69e2cc6593dda8e2cf1fe1a3921ce4224b225573b898e456ae9bd5e557dc84aea50841f70f254c9cc6ea62c6]
+    CLO_1: ENCRYPTED[89d1e3d9b5d86776adee1218f6f0b8369c2c743993b5aa2abb9d1af9584db072d0bdf5a376384101d68597ff8f4fb432]
     URI: example.com
     ROM_U: 1
 
