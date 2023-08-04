@@ -1,5 +1,5 @@
 env:
-    MANIFEST: repo init -u https://github.com/ProtonAOSP/android_manifest -b sc
+    MANIFEST: https://github.com/ProtonAOSP/android_manifest -b sc
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
