@@ -1,16 +1,16 @@
 env:
-    MANIFEST: https://github.com/Colt-Enigma/platform_manifest -b c13.1
+    MANIFEST: repo init -u https://github.com/ProtonAOSP/android_manifest -b sc
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: colt_$DEVICE-userdebug
-    OUTPUT: C*.zip
+    LUNCH_COMBO: aosp_$DEVICE-userdebug
+    OUTPUT: P*.zip
     CLO: 1:ci
     CLO_1: ENCRYPTED[89d1e3d9b5d86776adee1218f6f0b8369c2c743993b5aa2abb9d1af9584db072d0bdf5a376384101d68597ff8f4fb432]
-    URI: https://sourceforge.net/projects/x01bd-asus/files/Extras/ccache.tar.gz/download
-    ROM_U: 1
+    URI: #
+    ROM_U: 0
 
 task:
   name: "build"
