@@ -10,9 +10,6 @@ rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/system/sepolicy/vendor/rild.te
-cd ~/work/device/xiaomi/fleur/sepolicy/private
-wget https://raw.githubusercontent.com/RT1648/android_device_realme_RMP6768/lineage-20.0/sepolicy/vendor/hal_light_default.te
-cd ~/work
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
