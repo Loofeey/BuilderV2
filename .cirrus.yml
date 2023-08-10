@@ -7,8 +7,8 @@ env:
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
     LUNCH_COMBO: superior_$DEVICE-userdebug
     OUTPUT: S*.zip
-    CLO: 1:ci
-    CLO_1: ENCRYPTED[306ab3c47b8125c4819ef9e8aef7ea19c175b9844c844d6df2ac1fa25f00802efc8074b562d78dbc6e4a8c99be11105b]
+    CLO: ci:ci
+    CLO_1: ENCRYPTED[e85137456e628dcd310e16d4c14f39500c329c18a35d5c4ac0040555578307510ddb6d8a0d0362ed1232c1fbebed1b64]
     URI: https://sourceforge.net/projects/fleur/files/ccache/Superior/ccache.tar.gz/download
     ROM_U: 1
 
