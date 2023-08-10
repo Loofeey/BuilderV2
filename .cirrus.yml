@@ -8,7 +8,7 @@ env:
     LUNCH_COMBO: superior_$DEVICE-userdebug
     OUTPUT: S*.zip
     CLO: 1:ci
-    CLO_1: ENCRYPTED[89d1e3d9b5d86776adee1218f6f0b8369c2c743993b5aa2abb9d1af9584db072d0bdf5a376384101d68597ff8f4fb432]
+    CLO_1: ENCRYPTED[306ab3c47b8125c4819ef9e8aef7ea19c175b9844c844d6df2ac1fa25f00802efc8074b562d78dbc6e4a8c99be11105b]
     URI: https://sourceforge.net/projects/fleur/files/ccache/Superior/ccache.tar.gz/download
     ROM_U: 1
 
