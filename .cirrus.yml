@@ -1,15 +1,15 @@
 env:
-    MANIFEST: https://github.com/SuperiorOS/manifest.git -b thirteen
+    MANIFEST: https://github.com/DerpFest-AOSP/manifest.git -b 13
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
-    TARGET: bacon
+    TARGET: derp
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: superior_$DEVICE-userdebug
-    OUTPUT: S*.zip
+    LUNCH_COMBO: derp_$DEVICE-userdebug
+    OUTPUT: D*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[e85137456e628dcd310e16d4c14f39500c329c18a35d5c4ac0040555578307510ddb6d8a0d0362ed1232c1fbebed1b64]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/Superior/ccache.tar.gz/download
+    URI: https://sourceforge.net/projects/fleur/files/ccache/Derpfest/ccache.tar.gz/download
     ROM_U: 1
 
 task:
