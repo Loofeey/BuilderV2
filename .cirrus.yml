@@ -9,8 +9,8 @@ env:
     OUTPUT: r*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[339bc560183187c0bcea8664283189d2f2d18d64c84d04f83268bc96578f120bb16d782221ff097160757b6f4f2fbfaf]
-    URI:
-    ROM_U: 0
+    URI: https://sourceforge.net/projects/fleur/files/ccache/RisingOS/ccache.tar.gz/download
+    ROM_U: 1
 
 task:
   name: "build"
