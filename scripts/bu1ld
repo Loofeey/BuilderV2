@@ -4,10 +4,10 @@ aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
 cd ~/work
 git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
-rm -rf frameworks/av
-rm -rf packages/modules/Bluetooth
-git clone https://github.com/RT1648/packages_modules_Bluetooth.git packages/modules/Bluetooth
-git clone https://github.com/RT1648/frameworks_av.git frameworks/av
+rm -rf platfrom/frameworks/av
+rm -rf platform/packages/modules/Bluetooth
+git clone https://github.com/RT1648/platform_packages_modules_Bluetooth.git platform/packages/modules/Bluetooth
+git clone https://github.com/RT1648/platform_frameworks_av.git platform/frameworks/av
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
@@ -20,4 +20,4 @@ ccache -o compression=true
 ccache -z
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
-mka $TARGET -j8
+blissify -g $TARGET -j8 & sleep 95m
