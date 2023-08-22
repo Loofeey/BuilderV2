@@ -5,8 +5,6 @@ ls
 cd ~/work
 git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
 rm -rf platfrom/frameworks/av
-rm -rf platform/packages/modules/Bluetooth
-git clone https://github.com/RT1648/platform_packages_modules_Bluetooth.git platform/packages/modules/Bluetooth
 git clone https://github.com/RT1648/platform_frameworks_av.git platform/frameworks/av
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
