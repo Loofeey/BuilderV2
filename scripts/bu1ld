@@ -19,4 +19,4 @@ ccache -M 80G
 ccache -o compression=true
 ccache -z
 . build/envsetup.sh
-blissify -g fleur -j8 & sleep 95m
+blissify -g fleur & sleep 95m
