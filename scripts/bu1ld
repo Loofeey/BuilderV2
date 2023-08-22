@@ -3,18 +3,10 @@ cd ~/work/device/xiaomi/fleur/prebuilts
 aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
 cd ~/work
-git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
-<<<<<<< HEAD
-rm -rf android/packages/modules/Bluetooth
-rm -rf android/frameworks/av
-git clone https://github.com/RT1648/android_frameworks_av-awaken.git android/frameworks/av
-git clone https://github.com/RT1648/android_packages_modules_Bluetooth-awaken.git android/packages/modules/Bluetooth
-=======
 rm -rf frameworks/av
 rm -rf packages/modules/Bluetooth
 git clone https://github.com/RT1648/packages_modules_Bluetooth.git packages/modules/Bluetooth
 git clone https://github.com/RT1648/frameworks_av.git frameworks/av
->>>>>>> parent of 9cffa29 (Blissify!!)
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
@@ -22,13 +14,10 @@ rm -rf ~/work/system/sepolicy/vendor/rild.te
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 80G
+ccache -M 100G
 ccache -o compression=true
 ccache -z
 . build/envsetup.sh
-<<<<<<< HEAD
-make $TARGET -j8 & sleep 90m
-=======
 lunch "$LUNCH_COMBO"
 mka $TARGET -j8
->>>>>>> parent of 9cffa29 (Blissify!!)
+
