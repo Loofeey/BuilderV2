@@ -8,7 +8,7 @@ git clone https://github.com/PixelExperience/system_bpf.git system/bpf
 cd android/frameworks/av
 wget https://raw.githubusercontent.com/ponces/treble_build_pe/c9e57c034798f7f94799dba757f046fa271b4fcc/patches/trebledroid/platform_frameworks_av/0005-APM-Remove-A2DP-audio-ports-from-the-primary-HAL.patch
 wget https://raw.githubusercontent.com/ponces/treble_build_pe/c9e57c034798f7f94799dba757f046fa271b4fcc/patches/trebledroid/platform_frameworks_av/0004-APM-Optionally-force-load-audio-policy-for-system-si.patch
-git apply 0005* && git apply 0004
+git apply 0004* && git apply 0005
 cd ~/work
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
