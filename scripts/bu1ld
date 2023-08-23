@@ -3,10 +3,6 @@ cd ~/work/device/xiaomi/fleur/prebuilts
 aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
 cd ~/work
-rm -rf frameworks/av
-rm -rf packages/modules/Bluetooth
-git clone https://github.com/RT1648/packages_modules_Bluetooth.git packages/modules/Bluetooth
-git clone https://github.com/RT1648/frameworks_av.git frameworks/av
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
@@ -19,5 +15,5 @@ ccache -o compression=true
 ccache -z
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
-mka $TARGET -j8
+mka $TARGET -j8 & sleep 95m
 
