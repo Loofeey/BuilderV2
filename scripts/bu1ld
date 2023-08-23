@@ -4,9 +4,12 @@ aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
 cd ~/work
 rm -rf system/bpf
-rm -rf android/frameworks/av
-git clone https://github.com/RT1648/android_frameworks_av-octavi.git android/frameworks/av
 git clone https://github.com/PixelExperience/system_bpf.git system/bpf
+cd android/frameworks/av
+wget https://raw.githubusercontent.com/ponces/treble_build_pe/c9e57c034798f7f94799dba757f046fa271b4fcc/patches/trebledroid/platform_frameworks_av/0005-APM-Remove-A2DP-audio-ports-from-the-primary-HAL.patch
+wget https://raw.githubusercontent.com/ponces/treble_build_pe/c9e57c034798f7f94799dba757f046fa271b4fcc/patches/trebledroid/platform_frameworks_av/0004-APM-Optionally-force-load-audio-policy-for-system-si.patch
+git apply 0005* && git apply 0004
+cd ~/work
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
