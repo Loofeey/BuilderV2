@@ -4,6 +4,8 @@ aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
 cd ~/work
 rm -rf system/bpf
+rm -rf android/frameworks/av
+git clone https://github.com/RT1648/android_frameworks_av-octavi.git android/frameworks/av
 git clone https://github.com/PixelExperience/system_bpf.git system/bpf
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
