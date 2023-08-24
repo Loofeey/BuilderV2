@@ -1,15 +1,15 @@
 env:
-    MANIFEST: https://github.com/Octavi-Staging/manifest.git -b thirteen --depth=1
+    MANIFEST: https://github.com/Evolution-X/manifest -b tiramisu-jem
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
-    TARGET: bacon
+    TARGET: evolution 
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: octavi_$DEVICE-userdebug
-    OUTPUT: O*.zip
+    LUNCH_COMBO: evolution_$DEVICE-userdebug
+    OUTPUT: e*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[339bc560183187c0bcea8664283189d2f2d18d64c84d04f83268bc96578f120bb16d782221ff097160757b6f4f2fbfaf]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/Octavi/ccache.tar.gz/download
+    URI: #
     ROM_U: 1
 
 task:
