@@ -5,6 +5,9 @@ ls
 cd ~/work
 rm -rf system/bpf
 git clone https://github.com/PixelExperience/system_bpf.git system/bpf
+git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
+rm -rf frameworks/av
+git clone https://github.com/RT1648/android_frameworks_av-octavi.git frameworks/av
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
 rm -rf ~/work/platform/system/sepolicy/vendor/rild.te
 rm -rf ~/work/system/sepolicy/vendor/hal_light_default.te
@@ -17,5 +20,5 @@ ccache -o compression=true
 ccache -z
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
-mka $TARGET -j8 & sleep 95m
+mka $TARGET -j8
 
