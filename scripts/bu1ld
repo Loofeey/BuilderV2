@@ -2,8 +2,6 @@
 cd ~/work/device/xiaomi/fleur/prebuilts
 aria2c https://github.com/RT1648/Extras/releases/download/13.0.9.0/vendor.img
 ls
-rm -rf system/bpf
-git clone https://github.com/PixelExperience/system_bpf.git system/bpf
 git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
 cd ~/work
 rm -rf ~/work/platform/system/sepolicy/vendor/hal_light_default.te
