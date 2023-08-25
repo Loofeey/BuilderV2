@@ -1,15 +1,15 @@
 env:
-    MANIFEST: https://github.com/RisingTechOSS/android -b thirteen --git-lfs
+    MANIFEST: https://github.com/Project-Elixir/manifest -b Tiramisu
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: lineage_$DEVICE-userdebug
-    OUTPUT: r*.zip
+    LUNCH_COMBO: aosp_$DEVICE-userdebug
+    OUTPUT: P*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[339bc560183187c0bcea8664283189d2f2d18d64c84d04f83268bc96578f120bb16d782221ff097160757b6f4f2fbfaf]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/RisingOS/ccache.tar.gz/download
+    URI: #
     ROM_U: 1
 
 task:
