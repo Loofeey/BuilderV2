@@ -1,15 +1,15 @@
 env:
-    MANIFEST: https://github.com/Colt-Enigma/platform_manifest -b minimal
+    MANIFEST: https://github.com/Evolution-X/manifest -b tiramisu-jem
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifestt
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: colt_$DEVICE-userdebug
-    OUTPUT: C*.zip
+    LUNCH_COMBO: evolution_$DEVICE-userdebug
+    OUTPUT: e*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[514fd104d86d8a6ccda83bcb5dea3169cc6135cd0de214a0bbff28d3c4f9a516491ead8b2ce89a716fbf861eb91a5b5b]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/Colt/ccache.tar.gz/download
+    URI: https://sourceforge.net/projects/fleur/files/EvoX/Colt/ccache.tar.gz/download
     ROM_U: 1
 
 task:
