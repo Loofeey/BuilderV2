@@ -9,10 +9,10 @@ rm -rf hal_fingerprint_default.te && rm -rf hal_health_default.te && rm -rf  ril
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 50G
+ccache -M 100G
 ccache -o compression=true
 ccache -z
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
-make $TARGET -j$(nproc --all)
+mka $TARGET -j$(nproc --all)
 
