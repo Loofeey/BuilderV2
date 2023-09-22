@@ -5,7 +5,7 @@ env:
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifest-fleurprebuilt
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: Superior_$DEVICE-userdebug
+    LUNCH_COMBO: superior_$DEVICE-userdebug
     OUTPUT: S*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[514fd104d86d8a6ccda83bcb5dea3169cc6135cd0de214a0bbff28d3c4f9a516491ead8b2ce89a716fbf861eb91a5b5b]
