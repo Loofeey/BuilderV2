@@ -7,9 +7,9 @@ env:
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
     LUNCH_COMBO: evolution_$DEVICE-userdebug
     OUTPUT: e*.zip
-    CLO: ci:ci
-    CLO_1: ENCRYPTED[514fd104d86d8a6ccda83bcb5dea3169cc6135cd0de214a0bbff28d3c4f9a516491ead8b2ce89a716fbf861eb91a5b5b]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/EvoX/ccache.tar.gz/download
+    CLO: ci:
+    CLO_1: ENCRYPTED[26c8ebb829a1cdaeb3824d329d8cb8ba49b4fc47e3d1ffa7235b82ed6ec96a0ef8dafd04a9e0c2c37aa774d84ed9954e]
+    URI: #https://sourceforge.net/projects/fleur/files/ccache/EvoX/ccache.tar.gz/download
     ROM_U: 1
 
 task:
