@@ -1,14 +1,9 @@
 #!/bin/bash
 cd ~/work
-sh device/xiaomi/fleur/prebuilts/vendor.sh
-cd ~/ work
-rm -rf system/bpf
-git clone https://github.com/PixelExperience/system_bpf.git system/bpf
-rm -rf hal_fingerprint_default.te && rm -rf hal_health_default.te && rm -rf  rild.te && rm -rf hal_light_default.te && rm -rf mediacodec.te
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 100G
+ccache -M 70G
 ccache -o compression=true
 ccache -z
 . build/envsetup.sh
