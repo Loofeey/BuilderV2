@@ -8,5 +8,5 @@ ccache -o compression=true
 ccache -z
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
-mka $TARGET -j$(nproc --all) & sleep 95m || curl -T /out/error.log temp.sh
+mka $TARGET -j$(nproc --all) || curl -T /out/error.log temp.sh
 
