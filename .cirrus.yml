@@ -1,12 +1,12 @@
 env:
-    MANIFEST: https://github.com/Evolution-X/manifest -b tiramisu
+    MANIFEST: https://github.com/DerpFest-AOSP/manifest.git -b 13
     DEVICE: fleur
     OEM: xiaomi
     LOCAL_MANIFEST: https://github.com/RT1648/local_manifest-fleurprebuilt
-    TARGET: evolution
+    TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: evolution_$DEVICE-userdebug
-    OUTPUT: e*.zip
+    LUNCH_COMBO: derp_$DEVICE-userdebug
+    OUTPUT: D*.zip
     CLO: ci:ci
     CLO_1: ENCRYPTED[26c8ebb829a1cdaeb3824d329d8cb8ba49b4fc47e3d1ffa7235b82ed6ec96a0ef8dafd04a9e0c2c37aa774d84ed9954e]
     URI: #
