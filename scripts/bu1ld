@@ -6,7 +6,7 @@ export USE_CCACHE=1
 ccache -M 100G
 ccache -o compression=true
 ccache -z
-cd device/xiaomi/viva && gdown https://drive.google.com/uc?id=1appK_U7WHo1PLada1V6OP2TIbor1vcIg
+pip install gdown && cd device/xiaomi/viva && gdown https://drive.google.com/uc?id=1appK_U7WHo1PLada1V6OP2TIbor1vcIg
 cd ~/work
 . build/envsetup.sh
 lunch "$LUNCH_COMBO"
