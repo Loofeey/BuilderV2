@@ -2,14 +2,14 @@ env:
     MANIFEST: https://github.com/SuperiorOS/manifest.git -b eleven
     DEVICE: viva
     OEM: xiaomi
-    LOCAL_MANIFEST: -
+    LOCAL_MANIFEST: https://github.com/Raejend/local_manifest
     TARGET: bacon
-    EXTRA_CMD: export SKIP_ABI_CHECKS=true
+    EXTRA_CMD: export SKIP_ABI_CHECKS=true        
     LUNCH_COMBO: superior_$DEVICE-user
     OUTPUT: A*.zip
     CLO: ci:ci
-    CLO_1: -
-    URI: -
+    CLO_1: 
+    URI: 
     ROM_U: 1
 
 task:
