@@ -1,15 +1,15 @@
 env:
-    MANIFEST: https://github.com/ArrowOS/android_manifest.git -b arrow-13.1
-    DEVICE: RMP6768
-    OEM: realme
-    LOCAL_MANIFEST: https://github.com/RT1648/local_manifest-RMP6768
+    MANIFEST: https://github.com/SuperiorOS/manifest.git -b eleven
+    DEVICE: viva
+    OEM: xiaomi
+    LOCAL_MANIFEST: -
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: arrow_$DEVICE-userdebug
+    LUNCH_COMBO: superior_$DEVICE-user
     OUTPUT: A*.zip
     CLO: ci:ci
-    CLO_1: ENCRYPTED[26c8ebb829a1cdaeb3824d329d8cb8ba49b4fc47e3d1ffa7235b82ed6ec96a0ef8dafd04a9e0c2c37aa774d84ed9954e]
-    URI: https://sourceforge.net/projects/fleur/files/ccache/Arrow/ccache.tar.gz/download
+    CLO_1: -
+    URI: -
     ROM_U: 1
 
 task:
