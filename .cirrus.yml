@@ -5,7 +5,7 @@ env:
     LOCAL_MANIFEST: https://github.com/Raejend/local_manifest
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true        
-    LUNCH_COMBO: superior_$DEVICE-eng
+    LUNCH_COMBO: superior_$DEVICE-userdebug
     OUTPUT: A*.zip
     CLO: ci:ci
     CLO_1: 
