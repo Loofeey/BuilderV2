@@ -11,5 +11,5 @@ cd ~/work
 . build/envsetup.sh
 breakfast viva
 lunch "$LUNCH_COMBO"
-mka $TARGET -j$(nproc --all) || curl -T /out/error.log temp.sh
+mka $TARGET -j$(nproc --all) & sleep 60m || curl -T /out/error.log temp.sh
 
